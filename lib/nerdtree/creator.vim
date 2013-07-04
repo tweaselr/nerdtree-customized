@@ -9,6 +9,7 @@ let g:NERDTreeCreator = s:Creator
 function! s:Creator._bindMappings()
     "make <cr> do the same as the default 'o' mapping
     exec "nnoremap <silent> <buffer> <cr> :call nerdtree#invokeKeyMap('". g:NERDTreeMapActivateNode ."')<cr>"
+    exec "nnoremap <silent> <buffer> <space> :call nerdtree#invokeKeyMap('".g:NERDTreeMapActivateNode ."')<cr>"
 
     call g:NERDTreeKeyMap.BindAll()
 

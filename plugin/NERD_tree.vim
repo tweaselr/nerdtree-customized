@@ -50,7 +50,7 @@ call s:initVariable("g:NERDTreeAutoCenter", 1)
 call s:initVariable("g:NERDTreeAutoCenterThreshold", 3)
 call s:initVariable("g:NERDTreeCaseSensitiveSort", 0)
 call s:initVariable("g:NERDTreeChDirMode", 0)
-call s:initVariable("g:NERDTreeMinimalUI", 0)
+call s:initVariable("g:NERDTreeMinimalUI", 1)
 if !exists("g:NERDTreeIgnore")
     let g:NERDTreeIgnore = ['\~$']
 endif
@@ -65,7 +65,8 @@ call s:initVariable("g:NERDTreeShowFiles", 1)
 call s:initVariable("g:NERDTreeShowHidden", 0)
 call s:initVariable("g:NERDTreeShowLineNumbers", 0)
 call s:initVariable("g:NERDTreeSortDirs", 1)
-call s:initVariable("g:NERDTreeDirArrows", !nerdtree#runningWindows())
+call s:initVariable("g:NERDTreeDirArrows",1) 
+"!nerdtree#runningWindows())
 call s:initVariable("g:NERDTreeCasadeOpenSingleChildDir", 1)
 
 if !exists("g:NERDTreeSortOrder")
